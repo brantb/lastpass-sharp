@@ -60,11 +60,7 @@ namespace LastPass
                         return null;
                 }
 
-                // Override the group name with the shared folder name if any.
-                if (folder != null)
-                    group = folder.Name;
-
-                return new Account(id, name, username, password, url, group);
+                return new Account(id, name, username, password, url, group, folder?.Name);
             });
         }
 

@@ -7,7 +7,7 @@ namespace LastPass
 {
     public class Account
     {
-        public Account(string id, string name, string username, string password, string url, string group)
+        public Account(string id, string name, string username, string password, string url, string @group, string folder)
         {
             Id = id;
             Name = name;
@@ -15,6 +15,7 @@ namespace LastPass
             Password = password;
             Url = url;
             Group = group;
+            Folder = folder;
         }
 
         public string Id { get; private set; }
@@ -23,5 +24,6 @@ namespace LastPass
         public string Password { get; private set; }
         public string Url { get; private set; }
         public string Group { get; private set; }
+        public string Folder { get; private set; }
     }
 }

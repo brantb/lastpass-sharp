@@ -17,14 +17,16 @@ namespace LastPass.Test
             var password = "password";
             var url = "url";
             var group = "group";
+            var folder = "folder";
 
-            var account = new Account(id, name, username, password, url, group);
+            var account = new Account(id, name, username, password, url, @group, folder);
             Assert.AreEqual(id, account.Id);
             Assert.AreEqual(name, account.Name);
             Assert.AreEqual(username, account.Username);
             Assert.AreEqual(password, account.Password);
             Assert.AreEqual(url, account.Url);
             Assert.AreEqual(group, account.Group);
+            Assert.AreEqual(folder, account.Folder);
         }
     }
 }
